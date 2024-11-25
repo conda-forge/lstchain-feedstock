@@ -1,18 +1,19 @@
 {% set name = "lstchain" %}
-{% set version = "0.10.12" %}
+{% set version = "0.10.13" %}
+{% set python_min = 3.9 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
-  sha256: d5170054ebf452a5af49cdd97cc0a1f576627876f730206889a454056976af89
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
+  sha256: 1c9db6d9a5335335699a8cc1dc28b0382b0d797838446dd3738ca5c785f63fa6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - lstchain_create_run_summary = lstchain.scripts.lstchain_create_run_summary:main
     - lstchain_mc_r0_to_dl1 = lstchain.scripts.lstchain_mc_r0_to_dl1:main
@@ -51,16 +52,16 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=40.6.0
     - setuptools-scm >=3.4
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - astropy >=5.0,<6.dev0
     - bokeh >=2.0,<3.dev0
     - ctapipe >=0.19.2,<0.20.dev0
-    - ctapipe_io_lst >=0.23.0,<0.24.dev0
+    - ctapipe_io_lst >=0.24.0,<0.25.dev0
     - ctaplot >=0.6.4,<0.7.dev0
     - eventio >=1.9.1,<2.0.0a0
     - gammapy >=1.1,<2.dev0
@@ -87,6 +88,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:

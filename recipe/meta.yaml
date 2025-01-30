@@ -1,5 +1,5 @@
 {% set name = "lstchain" %}
-{% set version = "0.10.13" %}
+{% set version = "0.10.15" %}
 {% set python_min = 3.9 %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
-  sha256: 1c9db6d9a5335335699a8cc1dc28b0382b0d797838446dd3738ca5c785f63fa6
+  sha256: 5f03b95c3d51730a4040c186adb0c7e234b025cc59f1bd2ec2978c0df81f707b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - lstchain_create_run_summary = lstchain.scripts.lstchain_create_run_summary:main
     - lstchain_mc_r0_to_dl1 = lstchain.scripts.lstchain_mc_r0_to_dl1:main

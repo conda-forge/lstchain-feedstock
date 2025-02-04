@@ -1,7 +1,7 @@
 {% set name = "lstchain" %}
 {% set version = "0.10.15" %}
 
-{% set python_min = 3.9 %}
+{% set python_min = 3.10 %}
 
 package:
   name: {{ name|lower }}
@@ -82,7 +82,7 @@ requirements:
     - toml
     - pymongo
     - pyparsing
-    - protozfits >=2.5,<3.dev0
+    - protozfits >=2.6.1,<3.dev0
 
 test:
   imports:

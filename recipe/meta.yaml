@@ -1,5 +1,6 @@
 {% set name = "lstchain" %}
 {% set version = "0.10.15" %}
+
 {% set python_min = 3.9 %}
 
 package:
@@ -9,6 +10,7 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
   sha256: 5f03b95c3d51730a4040c186adb0c7e234b025cc59f1bd2ec2978c0df81f707b
+
 
 build:
   noarch: python
@@ -61,7 +63,7 @@ requirements:
     - astropy-base >=5.0,<6.dev0
     - bokeh >=2.0,<3.dev0
     - ctapipe >=0.19.2,<0.20.dev0
-    - ctapipe_io_lst >=0.24.0,<0.25.dev0
+    - ctapipe_io_lst >=0.25.1,<0.26.dev0
     - ctaplot >=0.6.4,<0.7.dev0
     - eventio >=1.9.1,<2.0.0a0
     - gammapy >=1.1,<2.dev0

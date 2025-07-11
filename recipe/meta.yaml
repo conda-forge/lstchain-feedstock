@@ -75,7 +75,7 @@ requirements:
     - pyirf >=0.12.0,<0.13.0dev0
     - scipy >=1.8
     - seaborn
-    - scikit-learn >=1.6,<2.dev0
+    - scikit-learn >=1.2,<2.dev0
     - pytables
     - toml
     - pymongo

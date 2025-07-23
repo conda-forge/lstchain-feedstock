@@ -1,6 +1,6 @@
 {% set name = "lstchain" %}
-{% set version = "0.11.2" %}
-{% set python_min = "3.10" %}
+{% set version = "0.11.3" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
-  sha256: 682f909509c0870e29d55545f1beb34a8dfc2596be1fa3174897068309148bd8
+  sha256: 6a66a93af2b493d1d9e5c0e63359ea91601c4ae013b81b9a0f5852b4a63c5699
 
 build:
   noarch: python
@@ -61,7 +61,7 @@ requirements:
     - astropy-base >=6.1,<8.dev0
     - bokeh >=3.0,<4.dev0
     - ctapipe >=0.25.1,<0.26.dev0
-    - ctapipe_io_lst >=0.27.0,<0.28.dev0
+    - ctapipe_io_lst >=0.27.2,<0.28.dev0
     - ctaplot >=0.6.4,<0.7.dev0
     - eventio >=1.9.1,<2.0.0a0
     - gammapy >=1.3.0,<1.4.0.dev0
@@ -80,7 +80,7 @@ requirements:
     - toml
     - pymongo
     - pyparsing
-    - protozfits >=2.6.1,<3.dev0
+    - protozfits >=2.7.3,<3.dev0
 
 test:
   imports:

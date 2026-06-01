@@ -70,7 +70,7 @@ requirements:
     - joblib >=1.4.0,<1.5.dev0
     - matplotlib-base >=3.10,<3.11.0dev0
     - numba
-    - numpy
+    - numpy <2.3
     - pandas
     - pyirf >=0.12.0,<0.13.0dev0
     - scipy >=1.8

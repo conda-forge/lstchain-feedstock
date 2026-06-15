@@ -148,6 +148,3 @@ Feedstock Maintainers
 * [@moralejo](https://github.com/moralejo/)
 * [@rlopezcoto](https://github.com/rlopezcoto/)
 
-
-<!-- dummy commit to enable rerendering -->
-

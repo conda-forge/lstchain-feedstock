@@ -22,7 +22,7 @@ build:
     - lstchain_dl1ab = lstchain.scripts.lstchain_dl1ab:main
     - lstchain_mc_sensitivity = lstchain.scripts.lstchain_mc_sensitivity:main
     - lstchain_add_source_dependent_parameters = lstchain.scripts.lstchain_add_source_dependent_parameters:main
-    - lstchain_dl1_to_dl2 = lstchain.scripts.lstchain_dl1_to_dl2:main
+    - lstchain_dl1_to_dl2 = lstchain.tools.lstchain_dl1_to_dl2:main
     - lstchain_data_create_time_calibration_file = lstchain.scripts.lstchain_data_create_time_calibration_file:main
     - lstchain_dump_config = lstchain.scripts.lstchain_dump_config:main
     - lstchain_mc_rfperformance = lstchain.scripts.lstchain_mc_rfperformance:main
